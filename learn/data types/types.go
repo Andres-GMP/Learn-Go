@@ -16,11 +16,11 @@ func main() {
 	/*
 		---Declaration of variables:
 		NOTE: use the keyword "var"
-
+		NOTE: this type of declaration is STATIC
 		var <nameVariable> <type> = <data>
 
 		---Other form:
-		NOTE: the go compiler is able to infer the type based on the literal value
+		NOTE: the go compiler is able to infer the type based on the literal value, this declaration is DYNAMIC
 		<nameVariable> := <data>
 
 		---Declaration of variables with comma:
