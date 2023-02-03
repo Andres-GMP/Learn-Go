@@ -20,9 +20,10 @@ func main() {
 	x[4] = 83
 	var total float64 = 0
 	//loop to compute a the total score.
-	for i := 0; i < 5; i++ {
+	for i := 0; i < len(x); i++ {
 		total += x[i]
 	}
-	fmt.Println(total / 5)
+	//
+	fmt.Println(total / float64(len(x)))
 
 }
