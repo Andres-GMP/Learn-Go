@@ -98,4 +98,11 @@ func main() {
 
 	const y string = "Hello, word"
 
+	/*
+		---Tiping infer
+	*/
+	a, b, c := 0, "foo", false
+
+	fmt.Println(a, b, c)
+
 }
