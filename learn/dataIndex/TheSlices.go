@@ -23,7 +23,7 @@ func main() {
 
 	fmt.Printf("Capacidad inicial: %d", capacidad)
 
-	for i := 0; i < 25; i++ {
+	for i := uint8(0); i < 25; i++ {
 		edades = append(edades, i)
 
 		if cap(edades) != capacidad {
