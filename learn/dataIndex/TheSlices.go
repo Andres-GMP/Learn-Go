@@ -12,11 +12,22 @@ func main() {
 		NOTE: the slice can't have two types of variables
 	*/
 
-	//NOTE: 1st way to make slice
+	//NOTE: 1st way to declarate slice
 	// edades := []uint8{"manzana", "peras"}
 
-	//NOTE: 2nd way to make slice
+	//NOTE: 2nd way to declarate slice
 	//NOTE: We use <make> to keep memory for underlying array
+	// <nameSlice> := make([]<dataType>, <lenght>,<capacity>)
+	// edades := make([]uint8, 0, 2)
+
+	//NOTE: 3rd way to make slice
+	// var edades []uint8
+
+	//NOTE: 4th way to make slice
+	// var edades = []uint8{28, 30}
+
+	//NOTE: 4th way to make slice
+	// edades := []uint8{28, 30}
 
 	edades := make([]uint8, 0, 2)
 	capacidad := cap(edades)
@@ -24,6 +35,7 @@ func main() {
 	fmt.Printf("Capacidad inicial: %d\n", capacidad)
 
 	for i := uint8(0); i < 25; i++ {
+		// Append assumes that all elements of the current length of the slice are full
 		edades = append(edades, i)
 		fmt.Println(edades)
 		if cap(edades) != capacidad {
