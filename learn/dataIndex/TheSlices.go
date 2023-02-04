@@ -18,17 +18,18 @@ func main() {
 	//NOTE: 2nd way to make slice
 	//NOTE: We use <make> to keep memory for underlying array
 
-	edades := make([]uint8, 0, 10)
+	edades := make([]uint8, 0, 2)
 	capacidad := cap(edades)
-
-	fmt.Printf("Capacidad inicial: %d", capacidad)
+	fmt.Println(edades)
+	fmt.Printf("Capacidad inicial: %d\n", capacidad)
 
 	for i := uint8(0); i < 25; i++ {
 		edades = append(edades, i)
-
+		fmt.Println(edades)
 		if cap(edades) != capacidad {
 			capacidad = cap(edades)
-			fmt.Printf("La capacidad es ahora: %d", capacidad)
+			fmt.Printf("La capacidad es ahora: %d\n", capacidad)
+			fmt.Printf("el tamaño es : %d\n", len(edades))
 		}
 	}
 	// edades = append(edades, 22) //return a new slice assigned in slice edades with a value 22
