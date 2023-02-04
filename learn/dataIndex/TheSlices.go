@@ -58,6 +58,8 @@ func main() {
 		---Get lenght of slice
 		len(sliceName)
 
+		---Make a copy
+		copy(sliceReciver, sliceSender)
 	*/
 
 	fmt.Println(edades)
