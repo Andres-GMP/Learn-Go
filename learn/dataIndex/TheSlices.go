@@ -10,6 +10,8 @@ func main() {
 		NOTE: The only differencie betwen this an array is the missing length between the brackets.
 		NOTE: if the lenght is zero, we can't assign value in a position
 		NOTE: the slice can't have two types of variables
+		NOTE: When ranging over a slice, two values are returned for each iteration. The first is the index, and the second is a copy of the element at that index.
+
 	*/
 
 	//NOTE: 1st way to declarate slice
