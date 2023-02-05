@@ -140,15 +140,70 @@ func main() {
 			statement(s);
 		}
 
-		IN THIS THERE WILL BE NO EXAMPLE BECAUSE I DONT HAVE THE KNOWLEDGE TO UNDERSTAND SOME THINGS.
-	*/
+		#######IN THIS THERE WILL BE NO EXAMPLE BECAUSE I DONT HAVE THE KNOWLEDGE TO UNDERSTAND SOME THINGS.##########
 
-	/*
 		---for
-		NOTE:
+		NOTE: if range is avaliable, then the for loop executes for each item in the range.
 
 		for [condition | (init; condition; increment)| Range]{
 			statement(s);
 		}
+
+		example:
+		for i := 1; i<5; i++ {
+			sum += i
+		}
+		fmt.Println(sum) //Output 10 (1+2+3+4)
+
+		---Way to make a while loop
+
+		n :=1
+		for n<5{
+			n*= 2
+		}
+		fmt.Println(n)
+
+		---Way to make a infinite loop
+
+		sum := 0
+		for{
+			sum++
+		}
+		fmt.Println(sum) //never reached
+
+		---Way to make for-each range loop
+
+		strings := []strings{"hello", "world"}
+		for i, s := range strings{
+			fmt.Println(i, s)
+		}
+
+		---Way to make for-each range loop
+		sum := 0
+		for i := 1; i<5; i++{
+			if i%2 != 0{
+				continue
+			}
+			sum += i
+		}
+
+		fmt.Println(sum) //6 (2+4)
 	*/
+
+	var b int = 15
+	var a int
+
+	numbers := [6]int{1, 2, 3, 5}
+	//
+	for a := 0; a < 10; a++ {
+		fmt.Printf("value of a: %d\n ", a)
+	}
+	for a < b {
+		a++
+		fmt.Printf("value of a %d\n", a)
+	}
+
+	for i, x := range numbers {
+		fmt.Printf("value of x = %d |ta %d\n", x, i)
+	}
 }
