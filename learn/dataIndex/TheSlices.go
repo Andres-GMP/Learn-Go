@@ -44,6 +44,7 @@ func main() {
 			fmt.Printf("el tamaño es : %d\n", len(edades))
 		}
 	}
+
 	// edades = append(edades, 22) //return a new slice assigned in slice edades with a value 22
 	// edades = edades[0:6]        //resize slice
 	// edades[5] = 28              //assign value index 5 of slice resize
